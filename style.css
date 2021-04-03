@@ -332,17 +332,13 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
 }
 
-.navbar-toggle:hover {
+.navbar-toggle:hover{
     background: transparent!important;
 }
 
@@ -364,6 +360,14 @@ a:hover {
 #bloc-8
 {
     background: #2a2a2a;
+}
+#bloc-0 .site-navigation2
+{
+    position: absolute;
+        top: 50%;
+        right: 220px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
@@ -457,7 +461,6 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-.btn-d,
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
@@ -481,6 +484,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: #FFFFFF;
 }
 
 .icon-lg {
@@ -540,7 +544,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before, a[data-lightbox]:focus-visible::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -558,7 +562,7 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img, a[data-lightbox]:focus-visible img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -606,7 +610,7 @@ a[data-lightbox]:hover img {
 
 .close-lightbox:hover,
 .next-lightbox:hover,
-.prev-lightbox:hover {
+.prev-lightbox:hover, {
     opacity: 1.0;
     color: #FFF;
 }
@@ -672,7 +676,10 @@ a {
 .hero-bloc-text-sub {
     font-size: 36px;
 }
-
+#bloc-6 p
+{
+    font-size: 20px;
+}
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -782,16 +789,30 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
+}
+q
+{
+    font-size: 20px;
+}
+#bloc-3-what-i-do a 
+{
+    font-size: 15px;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: green;
     color: #FFFFFF!important;
+    transition: transform 350ms ease-in-out;
+    transform: scale(1);
+}
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus-visible 
+{
+    transform: scale(1.10);
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: green!important;
     color: #FFFFFF!important;
 }
 
