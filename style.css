@@ -610,7 +610,7 @@ a[data-lightbox]:hover img, a[data-lightbox]:focus-visible img {
 
 .close-lightbox:hover,
 .next-lightbox:hover,
-.prev-lightbox:hover, {
+.prev-lightbox:hover {
     opacity: 1.0;
     color: #FFF;
 }
